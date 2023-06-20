@@ -20,6 +20,8 @@ Hoisting is a JavaScript behavior where variable and function declarations are m
 
 
 console.log(x); // Output: undefined
+
+
 var x = 5;
 
 
@@ -27,6 +29,8 @@ var x = 5;
 The Temporal Dead Zone (TDZ) is a behavior that occurs when using variables declared with let and const. It refers to the time span between the start of a block scope and the point at which a variable is declared. During this period, trying to access the variable will result in a ReferenceError.
 
 console.log(x); // Output: ReferenceError: x is not defined
+
+
 let x = 5;
 
 
@@ -36,7 +40,9 @@ Assign a function to a variable:
 
 
 const add = function(a, b) {
+
   return a + b;
+  
 };
 
 
@@ -50,5 +56,7 @@ Pure functions have several benefits, such as improved code maintainability, tes
 
 
 function multiply(a, b) {
+
   return a * b;
+  
 }
