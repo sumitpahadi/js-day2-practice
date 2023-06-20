@@ -16,6 +16,9 @@ const: Variables declared with const also have block scope and must be assigned 
 
 #question3=>Hoisting:
 Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can use variables and call functions before they are declared in the code. However, only the declarations are hoisted, not the initializations or assignments.
+
+
+
 console.log(x); // Output: undefined
 var x = 5;
 
@@ -30,6 +33,8 @@ let x = 5;
 #Question 5=>First-class functions:
 In programming, first-class functions refer to the concept of treating functions as first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned as values from other functions. In other words, functions can be treated just like any other data type.
 Assign a function to a variable:
+
+
 const add = function(a, b) {
   return a + b;
 };
@@ -41,6 +46,9 @@ Pure functions are functions that always produce the same output given the same 
 They do not modify the values of variables outside their scope.
 They do not rely on or modify the state of external resources, such as databases or global variables.
 Pure functions have several benefits, such as improved code maintainability, testability, and the ability to reason about their behavior more easily. Since pure functions have no side effects, they are less prone to bugs and can be safely parallelized.
+
+
+
 function multiply(a, b) {
   return a * b;
 }
